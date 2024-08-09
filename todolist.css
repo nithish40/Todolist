@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://uilight.netlify.app/main.css");
     :root{
         --text-color-primary: #f9fafb;
         --background-color: #111827;
@@ -38,21 +39,22 @@
         color: var(--text-color-primary);
         border: none;
     }
+    .absolute{
+        background-color: var(--background-color);
+    }
     .button:hover{
         cursor: pointer;
     }
     .todo{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 3rem;
         color: var(--text-color-primary);
         font-size: 1.5rem;
         font-family:  'Arial Narrow Bold', sans-serif;
     }
     .todo-container{
         height: 70vh;
+        width: 28vw;
         overflow-y: auto;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
     .todo-text{
         word-wrap:break-word;
@@ -65,7 +67,7 @@
         height: 1rem;
     }
     .del-btn{
-        background-color: var(--background-color);
+        color: #fff;
     }
     .checked-todo{
         text-decoration: line-through;
